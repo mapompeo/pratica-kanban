@@ -1,4 +1,3 @@
-
 let res = document.getElementById('res')
 let cadastrar = document.getElementById('cadastrar')
 

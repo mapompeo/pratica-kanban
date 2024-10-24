@@ -30,6 +30,20 @@ function criarCard(tarefa) {
         ${gerarBotao(tarefa.status)}
     </div> `
 
+    const editar = cartao.querySelector('#editar')
+    console.log(editar)
+    editar.addEventListener('click', () => {
+        editarTarefa()
+    })
+
+    const excluir = cartao.querySelector('#excluir')
+    console.log(excluir)
+    excluir.addEventListener('click', () => {
+        excluirTarefa()
+    })
+
+    const bntStatus = cartao.querySelectorAll('button[data-status]')
+    bntStatus.forEach
     return cartao
 }
 
@@ -49,53 +63,6 @@ function carregarTarefas() {
         .catch((err) => {
             console.error('erro ao listar usuarios', err)
         })
-
-
-    //     const tarefas = [
-    //         {
-    //             id_tarefa: "1",
-    //             id_usuario: "1",
-    //             tipo: "suporte",
-    //             area: "tecnologia",
-    //             prioridade: "Baixa",
-    //             status: "A Fazer"
-    //         },
-    //         {
-    //             id_tarefa: "2",
-    //             id_usuario: "1",
-    //             tipo: "concerto",
-    //             area: "manutenção",
-    //             prioridade: "Alta",
-    //             status: "A Fazer"
-    //         },
-    //         {
-    //             id_tarefa: "3",
-    //             id_usuario: "1",
-    //             tipo: "programação",
-    //             area: "Desenvolvimento",
-    //             prioridade: "Alta",
-    //             status: "Fazendo"
-    //         },
-    //         {
-    //             id_tarefa: "4",
-    //             id_usuario: "1",
-    //             tipo: "instalação",
-    //             area: "suporte",
-    //             prioridade: "media",
-    //             status: "Pronto"
-    //         },
-    //     ]
-
-    //     tarefas.forEach(tarefa =>{
-    //         const card = criarCard(tarefa)
-    //         const coluna = document.getElementById(`${tarefa.status.toLowerCase().replace(' ', '-')}`)
-    //         if(coluna){
-    //             coluna.appendChild(card)
-    //         }
-    //     })
 }
 
-
-
-onload = carregarTarefas
-
+onload = carregarTarefas()
