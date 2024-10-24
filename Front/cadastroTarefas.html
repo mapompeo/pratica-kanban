@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan</title>
+    <link rel="stylesheet" href="cadastros.css">
+</head>
+<body>
+    <header>
+        <div class="title">Cadastro de Tarefas</div>
+        <nav>
+            <a href="./cadastroTarefas.html">Cadastro de tarefas</a>
+            <a href="./cadastroUsuarios.html">cadastro de Usuarios</a>
+            <a href="./index.html">Gerenciar Tarefas</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro Tarefas</h2>
+        <div class="tarefa">
+            <form>
+                <label for="tipo"></label>
+                <input type="text" id="tipo" required placeholder="Tipo:">
+                <br>
+                <label for="area"></label>
+                <input type="text" id="area" required placeholder="Área:">
+                <br>
+                <label for="nome">Usuário:</label>
+                <select name="nome" id="nome">
+                    <label for="usuario">usuario</label>
+                    <option value="Pedro">Pedro</option>
+                    <option value="Bianca">Bianca</option>
+                    <option value="Bernas">Bernas</option>
+                </select>
+                <br>
+                <label for="prioridade">Prioridade:</label>
+                <select name="nome" id="nome">
+                    <option value="Baixa">Baixa</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                </select>
+                <br>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </form>
+            </div>
+    </main>
+</body>
+</html>

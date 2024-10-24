@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 100, 200);
+    padding: 12px;
+}
+
+.title{
+    font-size: 20px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+h2{
+    text-align: center;
+}
+
+.usuario, .tarefa{
+    margin: 20px;
+}
+
+input{
+    padding: 8px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: 8px 0px 8px 0px;
+}
+
+button{
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgb(0, 100, 200);
+    color: white;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: rgb(0, 87, 173);
+}
+
+select{
+    border-radius: 8px;
+    padding: 4px;
+}

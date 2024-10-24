@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan</title>
+    <link rel="stylesheet" href="cadastros.css">
+    <script src="usuario.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title">Cadastro de Usuarios</div>
+        <nav>
+            <a href="./cadastroTarefas.html">Cadastro de tarefas</a>
+            <a href="./cadastroUsuarios.html">cadastro de Usuarios</a>
+            <a href="./index.html">Gerenciar Tarefas</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro Usuarios</h2>
+
+        <div class="usuario">
+            <form>
+
+                <label for="nome"></label>
+                <input type="text" id="nome" required placeholder="Nome:">
+                <br>
+                <label for="email"></label>
+                <input type="email" id="email" required placeholder="Email:">
+                <br>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </form>
+            <div id="res"></div>
+            </div>
+    </main>
+</body>
+</html>
