@@ -29,4 +29,14 @@ const listarTarefa = async (req,res)=>{
     }
 }
 
-module.exports = {cadastrarTarefa, listarTarefa}
+const excluirTarefa = async (req,res)=>{
+    const valor = req.params
+    console.log(valor)
+    try {
+        const pesq = Tarefa.destroy({where: {id_tarefa: valor.id}})
+    } catch (err){
+        
+    }
+}
+
+module.exports = {cadastrarTarefa, listarTarefa, excluirTarefa}
