@@ -1,9 +1,9 @@
-const {DataTypes} = require('sequelize')
+const { DataTypes } = require('sequelize')
 const db = require('../db/conn')
 
 const Usuario = db.define('usuario', {
-    id_usuario :{
-        type : DataTypes.INTEGER, 
+    id_usuario: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
@@ -15,8 +15,8 @@ const Usuario = db.define('usuario', {
         type: DataTypes.STRING(200),
         allowNull: false
     }
-},{
-    timestamps : false,
+}, {
+    timestamps: false,
     tableName: 'usuarios'
 })
 

@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Tahoma ;
+body {
+    font-family: Tahoma;
 }
 
 header {
@@ -15,43 +15,43 @@ header {
     padding: 12px;
 }
 
-.lista-container{
+.lista-container {
     display: grid;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3, 400px);
     gap: 40px;
     margin-left: 30px;
 }
 
-.card{
+.card {
     border: 1px solid black;
     border-radius: 8px;
     padding: 8px;
     margin-bottom: 20px;
 }
 
-.title{
+.title {
     font-size: 20px;
     color: white;
 }
 
-nav{
+nav {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-evenly;
     gap: 16px;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 16px;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-button{
+button {
     padding: 6px;
     border-radius: 10px;
     background-color: rgb(0, 100, 200);
@@ -59,6 +59,6 @@ button{
     border: 1px solid black;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(0, 87, 173);
 }

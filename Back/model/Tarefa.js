@@ -1,43 +1,43 @@
-const {DataTypes} = require('sequelize')
+const { DataTypes } = require('sequelize')
 const db = require('../db/conn')
 
 const Tarefa = db.define('tarefa', {
-    id_tarefa :{
-        type : DataTypes.INTEGER,
+    id_tarefa: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    id_usuario : {
+    id_usuario: {
         type: DataTypes.INTEGER,
-        primaryKey : true,
+        primaryKey: true,
         references: {
-            model : 'usuarios',
+            model: 'usuarios',
             key: 'id_usuario'
         }
     },
-    tipo : {
-        type : DataTypes.STRING(100),
-        allowNull: false
-    },
-    area : {
+    tipo: {
         type: DataTypes.STRING(100),
         allowNull: false
     },
-    prioridade : {
+    area: {
+        type: DataTypes.STRING(100),
+        allowNull: false
+    },
+    prioridade: {
         type: DataTypes.ENUM("Baixa", "Media", "Alta"),
         allowNull: false
     },
-    data : {
-        type : DataTypes.DATE,
-        defaultValue : DataTypes.NOW
+    data: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
     },
-    status : {
-        type : DataTypes.ENUM("A Fazer", "Fazendo", "Pronto"),
+    status: {
+        type: DataTypes.ENUM("A Fazer", "Fazendo", "Pronto"),
         defaultValue: "A fazer"
     }
 }, {
     timestamps: false,
-    tableName : 'tarefas'
+    tableName: 'tarefas'
 })
 
 module.exports = Tarefa
