@@ -31,10 +31,10 @@ const listarTarefa = async (req, res) => {
 const excluirTarefa = async (req, res) => {
     const valor = req.params
     try {
-        const pesq = Tarefa.destroy({ where: { id_tarefa: valor.id } })
-        res.status(200).json(pesq)
+        const pesq = await Tarefa.destroy({ where: { id_tarefa: valor.id } })
+        res.status(200).json({ message: `Tarefa excluída` })
     } catch (err) {
-        res.status(500).json({ Message: "Erro ao excluir tarefa" })
+        res.status(500).json({ message: "Erro ao excluir tarefa" })
     }
 }
 
@@ -43,11 +43,11 @@ const atualizarTarefa = async (req, res) => {
     console.log(valores)
     try {
         const pesq = await Tarefa.update({ status: valores.status }, { where: { id_tarefa: valores.id_tarefa } })
-        res.status(200).json({ Message: "Dados atualizados com sucesso" })
+        res.status(200).json({ message: "Dados atualizados com sucesso" })
     }
     catch (err) {
         console.error(`Erro ao atualizar o status da tarefa. ${err}`)
-        res.status(500).json({ Message: "Erro ao atualizar status da tarefa" })
+        res.status(500).json({ message: "Erro ao atualizar status da tarefa" })
     }
 }
 
