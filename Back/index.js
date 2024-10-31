@@ -22,6 +22,7 @@ app.get('/usuarios', controllerUsuario.listarUsuario)
 app.post('/tarefa', controllerTarefa.cadastrarTarefa)
 app.get('/tarefas', controllerTarefa.listarTarefa)
 app.delete('/tarefas/:id', controllerTarefa.excluirTarefa)
+app.put('/tarefas/:id', controllerTarefa.atualizarTarefa)
 
 conn.sync().then(() => {
     app.listen(PORT, hostname, () => {

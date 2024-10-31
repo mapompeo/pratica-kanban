@@ -45,7 +45,7 @@ function carregarUsuarios() {
                 option.value = usuario.id_usuario
                 option.textContent = usuario.nome
                 nomeSelect.appendChild(option)
-            });
+            })
         })
         .catch((err) => {
             console.error('nao foi possivel cadastrar', err)
