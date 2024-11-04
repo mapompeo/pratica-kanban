@@ -6,42 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KanBan</title>
-    <link rel="stylesheet" href="assets/css/cadastros.css">
-    <script src="assets/js/cadTarefa.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/cadastroTarefas.js" defer></script>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/kanban-icon-2048x2048-m4uia1ts.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <div class="title">Cadastro de Tarefas</div>
+        <div class="title">Gerenciamento de Tarefas</div>
         <nav>
-            <a href="./cadastroTarefas.html">Cadastro de tarefas</a>
-            <a href="./cadastroUsuarios.html">cadastro de Usuarios</a>
+            <strong><a href="./cadastroTarefas.html">Cadastro de Tarefas</a></strong>
+            <a href="./cadastroUsuarios.html">Cadastro de Usuários</a>
             <a href="./index.html">Gerenciar Tarefas</a>
         </nav>
     </header>
 
     <main>
-        <h2>Cadastro Tarefas</h2>
+        <h2>Cadastro de Tarefas</h2>
         <div class="tarefa">
             <form>
-                <label for="tipo"></label>
-                <input type="text" id="tipo" required placeholder="Tipo:">
-                <br>
-                <label for="area"></label>
-                <input type="text" id="area" required placeholder="Área:">
-                <br>
-                <label for="nome">Usuário:</label>
-                <select name="nome" id="nome">
-                    <option value=""></option>
-                </select>
-                <br>
-                <label for="prioridade">Prioridade:</label>
-                <select name="prioridade" id="prioridade">
-                    <option value="Baixa">Baixa</option>
-                    <option value="Media">Media</option>
-                    <option value="Alta">Alta</option>
-                </select>
-                <br>
+                <div>
+                    <label for="tipo"></label>
+                    <input type="text" id="tipo" required placeholder="Tipo:" class="input-field">
+                </div>
+                <div>
+                    <label for="area"></label>
+                    <input type="text" id="area" required placeholder="Área:" class="input-field">
+                </div>
+                <div>
+                    <label for="nome">Usuário:</label>
+                    <select name="nome" id="nome">
+                    </select>
+                </div>
+                <div>
+                    <label for="prioridade">Prioridade:</label>
+                    <select name="prioridade" id="prioridade">
+                        <option value="Baixa">Baixa</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </div>
                 <button type="submit" id="cadastrar">Cadastrar</button>
             </form>
             <div class="res"></div>

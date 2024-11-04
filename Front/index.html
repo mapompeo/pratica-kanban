@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KanBan</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/tarefa.js" defer></script>
+    <script src="assets/js/gerenciarTarefas.js" defer></script>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/kanban-icon-2048x2048-m4uia1ts.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <header>
+        <div class="title">Gerenciamento de Tarefas</div>
         <nav>
-            <a class="title">Gerenciamento de Tarefas</a>
-            <a href="./cadastroTarefas.html">Cadastro de tarefas</a>
-            <a href="./cadastroUsuarios.html">cadastro de Usuarios</a>
-            <a href="./index.html">Gerenciar Tarefas</a>
+            <a href="./cadastroTarefas.html">Cadastro de Tarefas</a>
+            <a href="./cadastroUsuarios.html">Cadastro de Usuários</a>
+            <strong><a href="./index.html">Gerenciar Tarefas</a></strong>
         </nav>
     </header>
 
@@ -27,12 +29,10 @@
                 <p><strong>A Fazer</strong></p>
                 <div id="a-fazer"></div>
             </div>
-
             <div class="lista-tarefa">
                 <p><strong>Fazendo</strong></p>
                 <div id="fazendo"></div>
             </div>
-
             <div class="lista-tarefa">
                 <p><strong>Pronto</strong></p>
                 <div id="pronto"></div>
